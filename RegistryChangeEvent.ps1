@@ -13,9 +13,9 @@ $watcher = New-Object System.Management.ManagementEventWatcher $query
 
 # Register an event that gets fired when an event arrives
 Register-ObjectEvent -InputObject $watcher -EventName EventArrived -Action {
-    $event = $event.SourceEventArgs.NewEvent
+    $newEvent = $event.SourceEventArgs.NewEvent
     Write-Host "Event occurred!"
-    Write-Host ($event | Format-List | Out-String)
+    Write-Host ($newEvent | Format-List | Out-String)
 } | Out-Null
 
 Write-Host ($reg | Format-Table | Out-String)
