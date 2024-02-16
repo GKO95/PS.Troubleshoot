@@ -3,7 +3,7 @@ $process = "svchost.exe"
 $regLocalDumps = "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps"
 
 $reg = @{
-    DumpType = 2;   # 1: Custom dump, 2: Full dump, 3: Mini dump   
+    DumpType = 2;   # 0: Custom dump, 1: Mini dump, 2: Full dump
     DumpCount = 10; # Number of dump files to keep (default: 10)
     DumpFolder = "%LocalAppData%\CrashDumps"; # Default folder for crash dumps
 }
