@@ -1,3 +1,4 @@
+# WER User Mode Dump: https://learn.microsoft.com/en-us/windows/win32/wer/collecting-user-mode-dumps
 $process = "svchost.exe"
 $regLocalDumps = "HKLM:\SOFTWARE\Microsoft\Windows\Windows Error Reporting\LocalDumps"
 
