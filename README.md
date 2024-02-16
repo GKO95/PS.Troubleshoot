@@ -1,2 +1,2 @@
-# PS.RegistryChangeEvent
-Real-time monitoring on changes of Windows registry using PowerShell
+# PS.Troubleshoot
+Collection of Windows PowerShell scripts for troubleshooting.
